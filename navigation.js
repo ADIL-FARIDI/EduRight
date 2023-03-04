@@ -54,7 +54,7 @@ function navigation() {
 // }
 
 function program() {
-  alert("Will upadate ASAP any event/programs near you!!");
+  alert("Will upadate soon!!");
 }
 
 function aboutus() {

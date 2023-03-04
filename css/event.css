@@ -53,15 +53,9 @@ span::selection {
 }
 
 .middle {
+  font-family: "Poppins", sans-serif;
   text-align: center;
-}
-
-/* Top card */
-.topCard {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
+  padding-top: 30px;
 }
 
 /* Bottom card */
@@ -75,7 +69,7 @@ span::selection {
 .eventCard {
   background-color: #f1f1f1 !important;
   color: #007bff !important;
-  border: 1px solid #000;
+  border: 0.2px solid #0000003a;
   border-radius: 7px;
   box-shadow: 0px 2px 5px rgb(0 0 0 / 30%);
   display: flex;
@@ -121,15 +115,252 @@ h3 {
   border: 1px solid #355fe6;
 }
 
+nav {
+  position: fixed;
+  width: 97%;
+  background-color: #f2f2f286;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(1.8);
+}
+
+nav h1 {
+  margin: 0;
+  color: #007bff;
+  font-size: 28px;
+  text-shadow: 1px 1px #f2f2f2;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+.menutoggle {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: #0062cc url(/assets/open.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  cursor: pointer;
+  z-index: 10000;
+  transition: 1s;
+}
+
+.menutoggle:hover {
+  background: #555555 url(/assets/open.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+
+.menutoggle.active {
+  top: 5px;
+  right: 5px;
+  background: #3b3b3f url(/assets/close.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+  transition: 1.2s;
+  border-radius: 100px;
+}
+
+.menutoggle.active:hover {
+  background: #3a3a3a url(/assets/close.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+}
+
+.navigation {
+  display: none;
+  position: fixed;
+  bottom: 100%;
+  right: 0;
+  width: 23%;
+  height: 100%;
+  background: #2f80ed;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  cursor: auto;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.navigation-style-1,
+.navigation-style-2,
+.navigation-style-3 {
+  display: none;
+  position: fixed;
+  bottom: 100%;
+  right: 0;
+  /* left: 100%; */
+  width: 23%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1.3s;
+  cursor: auto;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.navigation-style-1.active,
+.navigation-style-2.active,
+.navigation-style-3.active,
+.navigation.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 0;
+  /* left: 80%; */
+  transition: 1.3s;
+}
+
+.navigation-style-1 {
+  background-color: #9ecdff;
+}
+.navigation-style-2 {
+  background-color: #3898ff;
+}
+.navigation-style-3 {
+  background-color: #007bff;
+}
+.navigation ul {
+  position: relative;
+  list-style: none;
+  text-align: center;
+}
+
+.navigation ul li input {
+  border: none;
+  background-color: #2f80ed;
+}
+.navigation ul li input,
+.navigation ul li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+  color: #2b2b2b;
+  text-decoration: none;
+  font-weight: 600;
+  -webkit-transition: font-size 0.5s;
+}
+.navigation ul li input:hover {
+  color: #e7e7e7;
+  font-size: 3.4em;
+  font-weight: 600;
+  transition: 0.5s;
+
+  -webkit-transition: font-size 0.5s;
+}
+
 /* Media queries */
 @media (max-width: 900px) {
   .bottomCard {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media (max-width: 750px) {
+  .menutoggle {
+    display: block;
+  }
+  .navigation-style-1.active,
+  .navigation-style-2.active,
+  .navigation-style-3.active,
+  .navigation.active {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    bottom: 0;
+    transition: 1.3s;
+  }
+  .navigation-style-1,
+  .navigation-style-2,
+  .navigation-style-3,
+  .navigation {
+    width: 100%;
+    display: block;
+  }
+  .navigation ul li a {
+    font-size: 2em;
+    color: #111;
+    text-decoration: none;
+    font-weight: 200;
+    -webkit-transition: font-size 0.5s;
+  }
+  .navigation ul li a:hover {
+    color: #f60f20;
+    font-size: 3em;
+    font-weight: 500;
+    transition: 0.5s;
+    -webkit-transition: font-size 0.5s;
+  }
+  .navigation ul,
+  .navigation li {
+    margin: 40px;
+    margin-top: 140px;
+    display: block !important;
+  }
+  nav {
+    position: relative;
+  }
+  nav ul {
+    display: none; /* hide the navigation menu by default */
+  }
+  nav ul.show-menu {
+    display: flex; /* display the menu when the 'show-menu' class is added */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  nav ul.show-menu li {
+    margin: 10px 0; /* add some spacing between the menu items */
+  }
+
+  .bottomCard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media (max-width: 500px) {
   .bottomCard {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }

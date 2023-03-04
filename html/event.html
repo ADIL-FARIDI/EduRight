@@ -4,20 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/6fc957396b.css" crossorigin="anonymous" />
     <link href="/css/event.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Events</title>
 </head>
 
 <body>
     <div class="mainSec">
+        <nav>
+            <h1 type="button" onclick="home();" class="txt1">EduRight <i class="fa-solid fa-book icon"></i> <i
+                    class="fa-solid fa-earth-asia icon"></i>
+            </h1>
+            <ul>
+                <li><a href="/html/homepage.html" class="txt">
+                        Home <i class="fa-solid fa-house"></i>
+                    </a></li>
+                <li><a href="/html/courses.html" class="txt">Courses <i class="fa-regular fa-bookmark"></i></a>
+                </li>
+                <li><a href="/html/donateus.html" target="_blank" class="txt">Donate <i
+                            class="fa-solid fa-hand-holding-medical"></i></a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeogMa0a37NIIvvRSkFw6zdca9HJIY-E3hCIcGPGwG2W4PKIQ/viewform?usp=sf_link"
+                        target="_blank">Contact Us <i class="fa-regular fa-address-card"></i></a></li>
+            </ul>
+            <div class="menutoggle" onclick="tooglemenu();"></div>
+            <div class="navigation-style-1"></div>
+            <div class="navigation-style-2"></div>
+            <div class="navigation-style-3"></div>
+            <div class="navigation">
+                <ul>
+                    <a href="/html/homepage.html">
+                        <li><input type="button" value="Home" /></li>
+                    </a>
+                    <a href="/html/courses.html">
+                        <li><input type="button" value="Courses" /></li>
+                    </a>
+                    <a href="/html/donateus.html">
+                        <li><input type="button" value="Donate" /></li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
         <h1 class="middle">
             Events
         </h1>
-        <div class="topCard">
-            <input type="text" placeholder="Search event name" />
-            <button>Search</button>
-        </div>
         <div class="bottomCard">
             <div class="eventCard">
                 <img src="../assets/donateimg.jpg" class="cardImg" />
@@ -45,7 +76,7 @@
                     <button>
                         Attend
                     </button>
-                    <a href="#!">Get More Detail</a>
+                    <a href="#!" onclick="program();">Get More Detail</a>
                 </div>
             </div>
             <div class="eventCard">
@@ -74,7 +105,7 @@
                     <button>
                         Attend
                     </button>
-                    <a href="#!">Get More Detail</a>
+                    <a href="#!" onclick="program();">Get More Detail</a>
                 </div>
             </div>
             <div class="eventCard">
@@ -103,7 +134,7 @@
                     <button>
                         Attend
                     </button>
-                    <a href="#!">Get More Detail</a>
+                    <a href="#!" onclick="program();">Get More Detail</a>
                 </div>
             </div>
             <div class="eventCard">
@@ -132,41 +163,14 @@
                     <button>
                         Attend
                     </button>
-                    <a href="#!">Get More Detail</a>
-                </div>
-            </div>
-            <div class="eventCard">
-                <img src="../assets/donateimg.jpg" class="cardImg" />
-
-                <div>
-                    <h3>
-                        JEE FREE SESSSION
-                    </h3>
-                </div>
-                <div class="cardBtm">
-                    <div class="btmLeft">
-                        <b>
-                            Time:
-                        </b><br />
-                        10:00 AM IST
-                    </div>
-                    <div class="btmRight">
-                        <b>
-                            Address:
-                        </b><br />
-                        Mumbai, India
-                    </div>
-                </div>
-                <div class="btmSec">
-                    <button>
-                        Attend
-                    </button>
-                    <a href="#!">Get More Detail</a>
+                    <a href="#!" onclick="program();">Get More Detail</a>
                 </div>
             </div>
 
         </div>
     </div>
+    <script src="/navigation.js"></script>
+    <script src="https://kit.fontawesome.com/6fc957396b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
