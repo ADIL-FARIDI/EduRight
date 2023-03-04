@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  background-color: #444442;
+  padding-top: 15px;
+  background-image: url(/assets/bg.jpg);
+  background-size: cover;
+  display: block;
+  margin: 35px;
+}
+
+body::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(48, 48, 48);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif, "arial";
+  font-weight: 600;
+  font-size: 72px;
+  color: white;
+  text-align: center;
+}
+
+h1::selection {
+  color: wheat;
+}
+
+label::selection {
+  color: wheat;
+}
+h4::selection {
+  color: wheat;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif, "arial";
+  font-weight: 400;
+  font-size: 20px;
+  color: #9b9b9b;
+  line-height: 1.5;
+}
+
+.fa-address-book {
+  margin-left: 10px;
+  color: #fdd491;
+  font-size: 40px;
+}
+
+.fa-heart {
+  color: #f169f1;
+  font-size: 24px;
+}
+
+/* ///// inputs /////*/
+
+input:focus ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #999;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .styled-input {
+    width: 100%;
+  }
+}
+
+.styled-input label {
+  color: #999;
+  padding: 1.3rem 30px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input.wide {
+  width: 650px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input-container {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+  font-family: "Poppins", sans-serif;
+  padding: 7px 35px;
+  border-radius: 60px;
+  display: inline-block;
+  margin-left: 270px;
+  background-color: #3b3b3b;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+
+.submit-btn::selection {
+  color: wheat;
+}
+.submit-btn1 {
+  position: absolute;
+  left: -15rem;
+  top: 30px;
+  font-family: "Poppins", sans-serif;
+  padding: 7px 35px;
+  border-radius: 60px;
+  display: inline-block;
+  margin-left: 310px;
+  background-color: #3b3b3b;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.submit-btn1:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+
+.submit-btn1::selection {
+  color: wheat;
+}
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 50px;
+    width: 130%;
+    text-align: center;
+    margin-left: -20px;
+  }
+  .icon {
+    font-size: 40px;
+    margin-left: 50px;
+  }
+  .container {
+    width: 80%;
+    justify-content: center;
+  }
+  .submit-btn {
+    margin-left: 0px;
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  .submit-btn1 {
+    text-align: center;
+    position: absolute;
+    left: 2rem;
+    top: 30px;
+    color: antiquewhite;
+    margin-left: auto;
+    /* max-width: 20%; */
+    text-align: center;
+    border-radius: 5px;
+  }
+}
+
+input[type="checkbox"] + label {
+  color: #ccc;
+  font-style: italic;
+}
+
+input[type="checkbox"]:checked + label {
+  color: #f00;
+  font-style: normal;
+}

@@ -1,0 +1,79 @@
+/* Main section */
+.mainSec {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* Top card */
+.topCard {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Bottom card */
+.bottomCard {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Event card */
+.eventCard {
+  border: 1px solid #000;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.cardImg {
+  width: 100%;
+}
+
+/* Bottom section and card bottom */
+.btmSec,
+.cardBtm {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.btmSec a,
+.btmSec button {
+  border-radius: 6px;
+  color: #fff;
+  padding: 2px 3px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.btmSec a {
+  background-color: #35e66a;
+  border: 1px solid #35e66a;
+  padding: 2px 5px;
+  text-align: center;
+}
+
+.btmSec button {
+  background-color: #355fe6;
+  border: 1px solid #355fe6;
+}
+
+/* Media queries */
+@media (max-width: 900px) {
+  .bottomCard {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .bottomCard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

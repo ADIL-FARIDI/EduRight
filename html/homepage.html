@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduRight</title>
+  <link rel="icon" type="image/x-icon" href="/assets/logo.png" />
+  <link rel="stylesheet" href="/css/homepage.css" />
+  <link rel="stylesheet" href="https://kit.fontawesome.com/6fc957396b.css" crossorigin="anonymous" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="/navigation.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1 type="button" onclick="home();" class="txt1">EduRight <i class="fa-solid fa-book icon"></i> <i
+          class="fa-solid fa-earth-asia icon"></i>
+      </h1>
+      <ul>
+        <li><a onclick="courses();" class="txt">Courses <i class="fa-regular fa-bookmark"></i></a></li>
+        <li><a onclick="programs();" class="txt">Programs <i class="fa-regular fa-calendar-check"></i></a></li>
+        <li><a onclick="aboutus();" class="txt">About <i class="fa-regular fa-user"></i></a></li>
+        <li><a href="/html/donateus.html" target="_blank" class="txt">Donate <i
+              class="fa-solid fa-hand-holding-medical"></i></a></li>
+        <li><a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeogMa0a37NIIvvRSkFw6zdca9HJIY-E3hCIcGPGwG2W4PKIQ/viewform?usp=sf_link"
+            target="_blank">Contact Us <i class="fa-regular fa-address-card"></i></a></li>
+      </ul>
+      <div class="menutoggle" onclick="tooglemenu();"></div>
+      <div class="navigation-style-1"></div>
+      <div class="navigation-style-2"></div>
+      <div class="navigation-style-3"></div>
+      <div class="navigation">
+        <ul>
+          <li><input type="button" value="Home" onclick="courses();" /></li>
+          <li>
+            <input type="button" value="Courses" onclick="courses();" />
+          </li>
+          <li><input type="button" value="Programs" onclick="programs();" /></li>
+          <li><input type="button" value="About" onclick="aboutus();" /></li>
+        </ul>
+      </div>
+    </nav>
+    <p id="home">
+    <div class="hero txt">
+      <h2 class="txt">Quality <span> Education</span> for All</h2>
+      <p class="txt">EduRight <i class="fa-solid fa-earth-asia"></i> is committed to providing <span> quality education
+        </span><i class="fa-solid fa-book"></i> and donation drives <i class="fa-solid fa-indian-rupee-sign"></i> to
+        children
+        around the
+        country, regardless of
+        their
+        economic
+        circumstances.</p>
+      <button id="learn-more-btn">Learn More</button>
+    </div>
+    <div class="popup-overlay" id="popup">
+      <div class="popup-content">
+        <h2 class="txt">Learn More About EduRight</h2>
+        <p class="txt">EduRight is a non-profit organization committed to providing quality education to children around
+          the world.
+          Our mission is to ensure that every child, regardless of their economic circumstances, has access to a good
+          education. To learn more about what we do and how you can get involved, please visit our website or contact
+          us.
+        </p>
+        <button class="txt1" id="close-popup-btn">Close</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <br id="courses">
+    <br class="txt">
+    <section>
+      <h3 class="txt">Courses</h3>
+      <p class="txt">This website provides access to multiple sources of knowledge from a single link,
+        assisting the uneducated children by preventing them from having to explore the entire web for the best
+        information, and providing a reliable source of information to combat poverty and helping them by a donation
+        drive by our team.</p>
+      <a href="/html/courses.html">View Study Material</a>
+    </section>
+    <br id="programs">
+    <br class="txt">
+    <section>
+      <h3 class="txt">Our Programs</h3>
+      <p class="txt">From building schools to providing teacher training, EduRight has a wide range of programs designed
+        to improve
+        the quality of education in impoverished areas. Learn more about what we do and how you can get involved.</p>
+      <a type="button" onclick="program()">View Programs</a>
+    </section>
+    <br id="aboutus">
+    <section>
+      <h3 class="txt">About Us</h3>
+      <p class="txt"> EduRight is a non-profit organization dedicated to providing quality education to children in
+        poverty-stricken
+        areas. We believe that every child has the right to a good education, and we work tirelessly to make that a
+        reality. Learn more about our mission and our team.</p>
+    </section>
+  </main>
+  <footer>
+    <p class="txt">&copy; 2023 EduRight. All rights reserved.</p>
+  </footer>
+  <script src="./../jshome.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6fc957396b.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
