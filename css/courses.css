@@ -81,6 +81,10 @@ ul {
   /* flex-direction: row; */
 }
 
+.color {
+  color: #fff;
+}
+
 .accordion a {
   color: #b63b4d;
   text-decoration: none;
@@ -104,7 +108,7 @@ ul {
 }
 .accordion {
   width: 100%;
-  max-width: 250px;
+  max-width: 300px;
   margin: 10px 0px 20px;
   background: #3e97fd;
   -webkit-border-radius: 4px;
