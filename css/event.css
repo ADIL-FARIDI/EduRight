@@ -9,7 +9,17 @@
 
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
+}
+
+nav a {
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #2b2b2b;
 }
 
 body::-webkit-scrollbar {
@@ -113,6 +123,12 @@ h3 {
 .btmSec button {
   background-color: #355fe6;
   border: 1px solid #355fe6;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 10px 0px 50px 20px !important;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -230,7 +246,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 1.3s;
+  transition: 0.9s;
   cursor: auto;
   visibility: hidden;
   opacity: 0;
@@ -244,7 +260,7 @@ nav ul li a:hover {
   opacity: 1;
   bottom: 0;
   /* left: 80%; */
-  transition: 1.3s;
+  transition: 0.9s;
 }
 
 .navigation-style-1 {
@@ -284,6 +300,13 @@ nav ul li a:hover {
   -webkit-transition: font-size 0.5s;
 }
 
+.container {
+  text-align: center;
+  background-color: #e4e4e4;
+  width: 50%;
+  border-radius: 10px;
+}
+
 /* Media queries */
 @media (max-width: 900px) {
   .bottomCard {
@@ -302,7 +325,7 @@ nav ul li a:hover {
     visibility: visible;
     opacity: 1;
     bottom: 0;
-    transition: 1.3s;
+    transition: 0.9s;
   }
   .navigation-style-1,
   .navigation-style-2,
@@ -356,6 +379,13 @@ nav ul li a:hover {
 
   .bottomCard {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    text-align: center;
+    background-color: #e4e4e4;
+    width: 80% !important;
+    border-radius: 10px;
   }
 }
 

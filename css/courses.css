@@ -18,6 +18,13 @@ body {
   background-size: cover; */
   background-color: #fff;
 }
+nav a {
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #2b2b2b;
+}
 
 body::-webkit-scrollbar {
   width: 0.6rem;
@@ -83,6 +90,9 @@ ul {
 
 .color {
   color: #fff;
+}
+.color:hover {
+  color: #ffffff !important;
 }
 
 .accordion a {
@@ -488,7 +498,7 @@ nav ul li a:hover {
 }
 
 #close-popup-btn:hover {
-  background-color: #3a3939;
+  background-color: #ff4a4a;
 }
 #close-popup-btn1 {
   background-color: #007bff;
@@ -502,7 +512,7 @@ nav ul li a:hover {
 }
 
 #close-popup-btn1:hover {
-  background-color: #cccccc;
+  background-color: #003f83;
   color: #fff !important;
 }
 
@@ -512,13 +522,14 @@ nav ul li a:hover {
 }
 
 .courses {
-  border: 0px;
-  background-color: #f2f2f2b0;
+  border: 0px !important;
+  background-color: #f2f2f2b0 !important;
 }
 .courses:hover {
-  border: 0px;
-  color: #0062cc;
-  background-color: #f2f2f2b0;
+  text-decoration: underline !important;
+  border: 0px !important;
+  color: #0062cc !important;
+  background-color: #f2f2f2b0 !important;
 }
 
 .courses1 {
@@ -558,7 +569,7 @@ footer {
     opacity: 1;
     bottom: 0;
 
-    transition: 1.3s;
+    transition: 1s;
   }
   .navigation-style-1,
   .navigation-style-2,

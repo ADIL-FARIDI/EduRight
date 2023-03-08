@@ -106,7 +106,7 @@ nav ul li a:hover {
   background-size: 30px;
   cursor: pointer;
   z-index: 10000;
-  transition: 1s;
+  transition: 0.9s;
 }
 
 .menutoggle:hover {
@@ -123,7 +123,7 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 25px;
-  transition: 1.2s;
+  transition: 0.9s;
   border-radius: 100px;
 }
 
@@ -166,7 +166,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 1.3s;
+  transition: 0.9s;
   cursor: auto;
   visibility: hidden;
   opacity: 0;
@@ -180,7 +180,7 @@ nav ul li a:hover {
   opacity: 1;
   bottom: 0;
   /* left: 80%; */
-  transition: 1.3s;
+  transition: 0.9s;
 }
 
 .navigation-style-1 {
@@ -331,7 +331,7 @@ footer {
     opacity: 1;
     bottom: 0;
 
-    transition: 1.3s;
+    transition: 0.9s;
   }
   .navigation-style-1,
   .navigation-style-2,
